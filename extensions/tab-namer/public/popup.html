@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tab Namer</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <form id="rename-form">
+        <input id="title-input" name="title" type="text" autocomplete="off" maxlength="120" placeholder="Tab name" autofocus>
+        <button id="save-button" type="submit">Save</button>
+        <button id="clear-button" type="button" aria-label="Clear tab name">Clear</button>
+      </form>
+      <p id="status" role="status"></p>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
