@@ -1,10 +1,11 @@
 {
-  "name": "chrome-extensions",
+  "name": "browser-extensions",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "workspaces": [
-    "extensions/*"
+    "extensions/chrome/*",
+    "extensions/firefox/*"
   ],
   "scripts": {
     "build": "bun scripts/run-workspaces.ts build",

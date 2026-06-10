@@ -23,7 +23,7 @@ bun run build
 1. Open `chrome://extensions`.
 2. Enable Developer mode.
 3. Choose Load unpacked.
-4. Select `extensions/tab-namer/dist`.
+4. Select `extensions/chrome/tab-namer/dist`.
 
 ## Use
 

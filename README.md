@@ -1,10 +1,15 @@
-# Chrome Extensions
+# Browser Extensions
 
-Monorepo for small Manifest V3 Chrome extensions.
+Monorepo for small browser extensions.
+
+## Layout
+
+- `extensions/chrome/*`: Chrome extension packages.
+- `extensions/firefox/*`: Firefox extension packages.
 
 ## Extensions
 
-- `extensions/tab-namer`: assign a custom name to the current tab.
+- `extensions/chrome/tab-namer`: assign a custom name to the current Chrome tab.
 
 ## Build
 
@@ -27,4 +32,10 @@ Root scripts run the matching script in every package under `extensions/`.
 1. Open `chrome://extensions`.
 2. Enable Developer mode.
 3. Choose Load unpacked.
-4. Select the extension package's `dist` directory, such as `extensions/tab-namer/dist`.
+4. Select the extension package's `dist` directory, such as `extensions/chrome/tab-namer/dist`.
+
+## Load an Extension in Firefox
+
+1. Open `about:debugging#/runtime/this-firefox`.
+2. Choose Load Temporary Add-on.
+3. Select the extension package's manifest from its build output.

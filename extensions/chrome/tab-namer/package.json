@@ -1,5 +1,5 @@
 {
-  "name": "@chrome-extensions/tab-namer",
+  "name": "@browser-extensions/chrome-tab-namer",
   "version": "0.1.0",
   "private": true,
   "type": "module",

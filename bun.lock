@@ -9,13 +9,13 @@
         "typescript": "^5.9.3",
       },
     },
-    "extensions/tab-namer": {
-      "name": "@chrome-extensions/tab-namer",
+    "extensions/chrome/tab-namer": {
+      "name": "@browser-extensions/chrome-tab-namer",
       "version": "0.1.0",
     },
   },
   "packages": {
-    "@chrome-extensions/tab-namer": ["@chrome-extensions/tab-namer@workspace:extensions/tab-namer"],
+    "@browser-extensions/chrome-tab-namer": ["@browser-extensions/chrome-tab-namer@workspace:extensions/chrome/tab-namer"],
 
     "@types/chrome": ["@types/chrome@0.1.40", "", { "dependencies": { "@types/filesystem": "*", "@types/har-format": "*" } }, "sha512-UnfyRAe8ORu9HSuTH0EqyOEUin3JrWW9Nl/gDXezNfTUrfIoxw+WRZgKOxGz0t5BnjbfXBnS2eCYfW2PxH1wcA=="],
 
