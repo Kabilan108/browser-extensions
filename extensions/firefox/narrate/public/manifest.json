@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Narrate",
+  "version": "0.1.0",
+  "description": "Listen to any article with synchronized highlighting, powered by Inworld TTS.",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "action": {
+    "default_title": "Narrate this article"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+R"
+      },
+      "description": "Read this page aloud"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://api.inworld.ai/*"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "narrate@tonyokeke.dev",
+      "strict_min_version": "140.0"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+::highlight(narrate-paragraph) {
+  background-color: rgba(242, 177, 62, 0.16);
+}
+
+::highlight(narrate-word) {
+  background-color: rgba(242, 177, 62, 0.6);
+  color: #1c1304;
+}
+
+[data-narrate-active] {
+  background-color: rgba(242, 177, 62, 0.16) !important;
+}

@@ -2,3 +2,5 @@ node_modules/
 dist/
 extensions/*/dist/
 extensions/*/*/dist/
+.env
+*.xpi

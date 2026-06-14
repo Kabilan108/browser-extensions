@@ -13,9 +13,20 @@
       "name": "@browser-extensions/chrome-tab-namer",
       "version": "0.1.0",
     },
+    "extensions/firefox/narrate": {
+      "name": "@browser-extensions/firefox-narrate",
+      "version": "0.1.0",
+      "dependencies": {
+        "@mozilla/readability": "^0.6.0",
+      },
+    },
   },
   "packages": {
     "@browser-extensions/chrome-tab-namer": ["@browser-extensions/chrome-tab-namer@workspace:extensions/chrome/tab-namer"],
+
+    "@browser-extensions/firefox-narrate": ["@browser-extensions/firefox-narrate@workspace:extensions/firefox/narrate"],
+
+    "@mozilla/readability": ["@mozilla/readability@0.6.0", "", {}, "sha512-juG5VWh4qAivzTAeMzvY9xs9HY5rAcr2E4I7tiSSCokRFi7XIZCAu92ZkSTsIj1OPceCifL3cpfteP3pDT9/QQ=="],
 
     "@types/chrome": ["@types/chrome@0.1.40", "", { "dependencies": { "@types/filesystem": "*", "@types/har-format": "*" } }, "sha512-UnfyRAe8ORu9HSuTH0EqyOEUin3JrWW9Nl/gDXezNfTUrfIoxw+WRZgKOxGz0t5BnjbfXBnS2eCYfW2PxH1wcA=="],
 

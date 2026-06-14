@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Narrate settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Narrate<span class="accent">.</span></h1>
+        <p class="tagline">Listen to any article, read in a voice you choose.</p>
+      </header>
+
+      <section class="card">
+        <label for="api-key">Inworld API key</label>
+        <input
+          id="api-key"
+          type="password"
+          placeholder="Paste the Base64 key from the Inworld portal"
+          autocomplete="off"
+          spellcheck="false"
+          autofocus
+        />
+        <p class="hint">
+          Create a key at
+          <a href="https://platform.inworld.ai/api-keys" target="_blank" rel="noreferrer"
+            >platform.inworld.ai → API&nbsp;Keys</a
+          >
+          and copy the <em>Base64</em> credentials.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="row">
+          <div class="field">
+            <label for="model">Model</label>
+            <select id="model">
+              <option value="inworld-tts-1.5-max">TTS 1.5 Max — best quality</option>
+              <option value="inworld-tts-1.5-mini">TTS 1.5 Mini — faster, cheaper</option>
+              <option value="inworld-tts-2">TTS 2 — research preview</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="voice">Voice</label>
+            <select id="voice"></select>
+          </div>
+        </div>
+        <div class="actions">
+          <button id="refresh-voices" type="button">Refresh voice list</button>
+          <button id="preview" type="button" class="primary">Preview voice</button>
+        </div>
+      </section>
+
+      <p id="status" role="status"></p>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>
