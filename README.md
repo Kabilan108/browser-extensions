@@ -10,6 +10,7 @@ Monorepo for small browser extensions.
 ## Extensions
 
 - `extensions/chrome/tab-namer`: assign a custom name to the current Chrome tab.
+- `extensions/firefox/narrate`: listen to any article with synchronized highlighting (Inworld TTS).
 
 ## Build
 
